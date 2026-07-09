@@ -1,21 +1,21 @@
 class Rtkx < Formula
   desc "Context compression CLI for the AXON stack (fork of rtk)"
   homepage "https://github.com/sammyjdev/rtkx"
-  version "0.43.0"
+  version "0.43.1"
   license "Apache 2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.0/rtkx-aarch64-apple-darwin.tar.gz"
-    sha256 "06f4c100fe98cadec0c63b1afbfb1c182c620051c14daab82f6e84205035335c"
+    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.1/rtkx-aarch64-apple-darwin.tar.gz"
+    sha256 "cb9209c80a9b48a349f75f6c6f46f1ad7012ee2bccf6ffa049ead4542c323d17"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.0/rtkx-x86_64-apple-darwin.tar.gz"
-    sha256 "92be4ac8923c20917add4ee404e1df7d1206e678ef9f6b1728c339044f9b7c0c"
+    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.1/rtkx-x86_64-apple-darwin.tar.gz"
+    sha256 "0b11b25d249c87e0167060f9e843d87a227b51f5f2ac9fef2b2da4d1ba5b42ba"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.0/rtkx-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "8a99d213135930c6d56ce61a8756c496a276da7ecc3d3cec3c24f47bcf0f792e"
+    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.1/rtkx-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "c27ce5ead099fe2e3c6745c815e4b09a1f3de162934e82432ad44d2a70a943a8"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.0/rtkx-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "204eab1ca15d148c36bc9d7ef0844bdf9e65810bdc3d886fa151ce51461fc9cc"
+    url "https://github.com/sammyjdev/rtkx/releases/download/v0.43.1/rtkx-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "602344c213c9eecdde5e74102155530433e9621583d99a24b09c617e5f1eea69"
   end
 
   def install
